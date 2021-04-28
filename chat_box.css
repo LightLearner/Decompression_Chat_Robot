@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("./背景图1.jpg") no-repeat;
+    background-size: 104.8%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.chat{
+    opacity: 1;
+    width: 250px;
+    height: 110px;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(140, 224, 158, 0.62);
+    border-radius: 12px;
+    background-color: rgba(188, 236, 233, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(133, 191, 118, 0.2);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    left: 700px;
+    top: 250px;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+/* 输出框 */
+#father p{
+    opacity: 1;
+    width: 200px;
+    height: 30px;
+    margin: 20px 20px;
+    padding: 5px 10px;
+    /* clear: both; */
+    border: 1px solid rgba(140, 224, 158, 0.62);
+    border-radius: 12px;
+    background-color: rgba(188, 236, 233, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(133, 191, 118, 0.2);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    color:  rgb(113, 139, 255);
+}
+/* 收缩动画 */
+@keyframes example1 {
+    0%{}
+    90%{border-radius:50%;transform:translate(-195px,194px) scale(.071,.071);}
+    100%{border-radius:100%;transform:scale(0,0);}
+}
+@keyframes example2 {
+    0%{border-radius:100%;transform:scale(0,0);}
+    10%{border-radius:50%;transform:translate(-195px,194px) scale(.071,.071);}
+    100%{}
+}
+.bottle{
+    /* display:none; */
+    margin:0 auto;
+    margin-top:5px;
+    width: 350px;
+    height: 350px;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(140, 224, 158, 0.62);
+    border-radius: 12px;
+    background-color: rgba(188, 236, 233, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(133, 191, 118, 0.2);
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    left: 1000px;
+    top: -137px;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-name: example2; */
+    
+    /* animation-fill-mode: forwards; */
+}
+
+/*输入框*/
+.response{
+    opacity: 1;
+    width: 250px;
+    height: 70px;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(224, 186, 140, 0.62);
+    border-radius: 12px;
+    background-color: rgba(236, 217, 188, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(191, 158, 118, 0.2);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    left: 300px;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    color: rgb(226, 154, 45);
+}
+.box{
+    border: none;
+    resize: none;
+    outline:none;
+    display:block;
+    border-radius: 4px;
+    background-color: rgba(188, 236, 233, 0.5);
+    width: 250px;
+    height: 75px;
+    margin:0 auto;
+    margin-top:5px;
+    color: rgb(113, 139, 255);
+}
+#btn{
+    opacity: 1;
+    width: 50px;
+    height: 25px;
+    display:block;
+    outline:none;
+    float:right;
+    margin-right:10px;
+    margin-top:5px;
+    background-color: rgba(218, 253, 251, 0.5);
+    border: 1px solid rgba(140, 224, 158, 0.62);
+    color: rgb(81, 155, 130);
+}
+.question{
+    opacity: 1;
+    width: 250px;
+    height: 110px;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(140, 224, 158, 0.62);
+    border-radius: 12px;
+    background-color: rgba(188, 236, 233, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(133, 191, 118, 0.2);
+    font-size: 15px;
+    outline:none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    color: rgb(113, 139, 255);
+}
+.ball{
+    width: 25px;
+    height: 25px;
+    border:1px solid rgba(140, 224, 158, 0.62);
+    border-radius: 60px;
+    background-color: rgba(188, 236, 233, 0.5);
+    position: absolute;
+    left: 1000px;
+    top: 205px;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    outline:none;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}

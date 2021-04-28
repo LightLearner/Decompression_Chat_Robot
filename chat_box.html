@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <title>减压聊天机器人</title>
+    <link rel="stylesheet" type="text/css" href="chat_box.css">
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="chat_box.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr., net/npm/ font- awesome/css/font- awesome.min.css">
+   <script src="https://cdn.jsdelivr.net/gh/acai66/live2d@0.11/xuehua.js" async="async"></script>
+  </head>
+  <body>
+    <div class="waifu"><!--从这开始-->
+        <div class="waifu-tips" id="in"></div>
+        <textarea class="response" id="response" style="resize: none;outline: none;"></textarea>
+        <canvas id="live2d" width="700" height="700" class="live2d"></canvas><!--可用js绘制图形，此表示live2d人物-->
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross" data-active=true></span>
+        </div><!--结束-->
+
+        <textarea id="question" class="question"  style="resize: none;outline: none;"></textarea>
+      <button class="ball" id="ball" onclick="chabuduo()" ></button>
+      <div class="bottle" id="father" data-active='1'><!--输出框-->
+      </div>
+      <div class="chat" id="chat">
+        <textarea id="txt" class="box"></textarea>
+        <input type="button" id="btn" value="发送"  onclick="fasong()">
+      </div>
+    </div>
+    
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
+  </body>
+
+</html>
